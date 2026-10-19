@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página semántica</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+        }
+
+        header {
+            background-color: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #1e293b;
+            padding: 15px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        .contenedor {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        main {
+            flex: 3;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #bfdbfe;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .contenedor {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi página web</h1>
+        <p>Ejemplo de estructura semántica HTML5</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor">
+
+        <main id="inicio">
+            <h2>Contenido principal</h2>
+            <p>
+                Bienvenido a mi página web. Aquí se encuentra
+                la información más importante del sitio.
+            </p>
+
+            <section id="nosotros">
+                <h2>Sobre nosotros</h2>
+                <p>Somos una página dedicada al aprendizaje de HTML y CSS.</p>
+            </section>
+
+            <section id="servicios">
+                <h2>Nuestros servicios</h2>
+                <p>Compartimos recursos y tutoriales de desarrollo web.</p>
+            </section>
+        </main>
+
+        <aside>
+            <h2>Barra lateral</h2>
+            <p>
+                Aquí puedes agregar noticias, enlaces,
+                recomendaciones o información adicional.
+            </p>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mi página web - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
